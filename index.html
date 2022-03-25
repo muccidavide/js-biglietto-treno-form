@@ -24,7 +24,8 @@
 
     <div class="container">
 
-        <div id="my_form">
+        <div clid="my_form">
+            <h1 class="text-center">Acquista un nuovo biglietto!</h1>
 
             <div class="mb-3 form_name">
                 <label for="" class="form-label"></label>
@@ -50,8 +51,8 @@
                 </select>
             </div>
             
-            <button type="submit" onclick="myFunction()" class="btn btn-primary">Submit</button>
-            <button type="reset" onclick="resetFunction()" class="btn btn-primary">Submit</button>
+            <button id="submit" type="submit" class="btn btn-primary">Submit</button>
+            <button id="reset" type="reset"  class="btn btn-primary">Reset</button>
             
 
         </div>
@@ -66,7 +67,7 @@
                     <div>Nome passegero: </div>
                 </div>
                 <div class="col-6">
-                    <span id="passenger_name"></span>
+                    <span class="value" id="passenger_name"></span>
                 </div>
             </div>
 
@@ -84,7 +85,7 @@
                     <div>Carrozza: </div>
                 </div>
                 <div class="col-6">
-                    <span id="carriage_number"></span>
+                    <span class="value" id="carriage_number"></span>
                 </div>
             </div>
 
@@ -93,7 +94,7 @@
                     <div>Cd Code: </div>
                 </div>
                 <div class="col-6">
-                    <span id="code_number"></span>
+                    <span class="value" id="code_number"></span>
                 </div>
             </div>
 
@@ -102,7 +103,7 @@
                     <div>Prezzo: </div>
                 </div>
                 <div class="col-6">
-                    <span id="final_price"></span>
+                    <span class="value" id="final_price"></span>
                 </div>
             </div>
 

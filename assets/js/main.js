@@ -1,4 +1,6 @@
 // Immaganizzare Dati Passegero
+document.getElementById("submit").addEventListener("click", myFunction);
+
 
 function myFunction() {
 
@@ -37,3 +39,17 @@ function myFunction() {
     document.getElementById('code_number').innerHTML = cd_code;
     
 }
+
+document.getElementById("reset").addEventListener("click", resetFunction);
+
+function resetFunction() {
+    document.getElementById("full_nameid").value = "";
+    document.getElementById("km_tripid").value = "";
+    document.getElementById("age_id").value = "Under 18";
+    
+}
+
+
+
+
+
