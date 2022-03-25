@@ -35,6 +35,5 @@ function myFunction() {
 
     const cd_code = (Math.random()*100000).toFixed(0)
     document.getElementById('code_number').innerHTML = cd_code;
-
     
 }

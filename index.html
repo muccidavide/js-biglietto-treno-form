@@ -22,56 +22,106 @@
 
 <body>
 
-     <div class="container">
-        <div action="" onsubmit="myFunction()" >
+    <div class="container">
+
+        <div id="my_form">
+
             <div class="mb-3 form_name">
                 <label for="" class="form-label"></label>
-                <input type="text" class="form-control" name="" id="full_nameid" aria-describedby="full_name_helpId"
+                <input type="text" class="form-control" name="full_name" id="full_nameid" aria-describedby="full_name_helpId"
                     placeholder="Inserisci qui il tuo nome e cognome">
                 <small id="full_name_helpId" class="form-text text-muted">Nome e cognome</small>
+                
             </div>
-    
+
             <div class="mb-3 form_km">
                 <label for="" class="form-label"></label>
-                <input type="number" class="form-control" name="" id="km_tripid" aria-describedby="fkm_trip_helpId"
+                <input type="number" class="form-control" name="km_trip" id="km_tripid" aria-describedby="fkm_trip_helpId"
                     placeholder="Inserisci qui i km del tuo viaggio">
                 <small id="km_trip_helpId" class="form-text text-muted">Km viaggio</small>
             </div>
-    
+
             <div class="mb-3">
-              <label for="" class="form-label">Seleziona fascia d'eta</label>
-              <select class="form-control" name="" id="age_id">
-                <option id="under_id">Under 18</option>
-                <option id="standard_age_id">Tra i 18 e 65 anni</option>
-                <option id="over_id">Over 65</option>
-              </select>
+                <label for="" class="form-label">Seleziona fascia d'eta</label>
+                <select class="form-control" name="age" id="age_id">
+                    <option id="under_id">Under 18</option>
+                    <option id="standard_age_id">Tra i 18 e 65 anni</option>
+                    <option id="over_id">Over 65</option>
+                </select>
             </div>
-            <button onclick="myFunction()">Try it</button>
-    
+            
+            <button type="submit" onclick="myFunction()" class="btn btn-primary">Submit</button>
+            
 
         </div>
 
-        
     </div>
     <div class="container">
-        
+        <div class="ticket mt-3">
+            <div class="row p-4">
+                <div class="col-6 ">
+                    <div>Nome passegero: </div>
+                </div>
+                <div class="col-6">
+                    <span id="passenger_name"></span>
+                </div>
+            </div>
+
+            <div class="row p-4">
+                <div class="col-6 ">
+                    <div>Sconto: </div>
+                </div>
+                <div class="col-6">
+                    <span id="discount_type"></span>
+                </div>
+            </div>
+            
+            <div class="row p-4">
+                <div class="col-6 ">
+                    <div>Carrozza: </div>
+                </div>
+                <div class="col-6">
+                    <span id="carriage_number"></span>
+                </div>
+            </div>
+
+            <div class="row p-4">
+                <div class="col-6 ">
+                    <div>Cd Code: </div>
+                </div>
+                <div class="col-6">
+                    <span id="code_number"></span>
+                </div>
+            </div>
+
+            <div class="row p-4">
+                <div class="col-6 ">
+                    <div>Prezzo: </div>
+                </div>
+                <div class="col-6">
+                    <span id="final_price"></span>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+
         <div>Nome passegero: <span id="passenger_name"></span></div>
         <div>Sconto: <span id="discount_type"></span></div>
         <div>Carrozza: <span id="carriage_number"></span></div>
         <div>Codice Cp: <span id="code_number"></span></div>
         <div>Prezzo: <span id="final_price"></span></div>
 
-    </div> 
-
-
-
+    </div>
 
 
     <!-- BOOTSTRAP_JS  -->
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script> -->
+    </script>
 
 
     <!-- MY JS -->
