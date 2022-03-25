@@ -45,7 +45,12 @@ document.getElementById("reset").addEventListener("click", resetFunction);
 function resetFunction() {
     document.getElementById("full_nameid").value = "";
     document.getElementById("km_tripid").value = "";
-    document.getElementById("age_id").value = "Under 18";
+    document.getElementById("age_id").value = "";
+    document.getElementById("passenger_name").innerHTML = "";
+    document.getElementById("discount_type").innerHTML = "";
+    document.getElementById('carriage_number').innerHTML = "";
+    document.getElementById('code_number').innerHTML = "";
+    document.getElementById('final_price').innerHTML = "";
     
 }
 
