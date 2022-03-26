@@ -2,11 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+ img {
+     max-width: 100%;
+ }
 
 
+#my_form{
+    background-color: rgb(141, 135, 222);
+    padding: 3rem;
+}
 .ticket{
     background-color: rgba(0, 190, 48, 0.431);
     
 }
 
+.card{
+    border: none;
+}

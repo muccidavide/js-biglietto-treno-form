@@ -22,24 +22,22 @@
 
 <body>
 
-    <div class="container">
+    <div class="container mt-3 ">
 
-        <div id="my_form">
-            <h1 class="text-center">Acquista un nuovo biglietto!</h1>
+        <div id="my_form" class="row row-cols-2 rounded">
+            <div class="col">
+                <h1 class="text-center">Acquista un nuovo biglietto!</h1>
 
             <div class="mb-3 form_name">
-                <label for="" class="form-label"></label>
+                <label for="" class="form-label ">Nome e cognome</label>
                 <input type="text" class="form-control" name="full_name" id="full_nameid" aria-describedby="full_name_helpId"
                     placeholder="Inserisci qui il tuo nome e cognome">
-                <small id="full_name_helpId" class="form-text text-muted">Nome e cognome</small>
-                
             </div>
 
             <div class="mb-3 form_km">
-                <label for="" class="form-label"></label>
+                <label for="" class="form-label">Km viaggio</label>
                 <input type="number" class="form-control" name="km_trip" id="km_tripid" aria-describedby="fkm_trip_helpId"
                     placeholder="Inserisci qui i km del tuo viaggio">
-                <small id="km_trip_helpId" class="form-text text-muted">Km viaggio</small>
             </div>
 
             <div class="mb-3">
@@ -55,13 +53,21 @@
             <button id="reset" type="reset"  class="btn btn-primary">Reset</button>
             
 
+            </div>
+            <div class="col d-flex align-items-center p-3">
+                .<div class="card text-white bg-primary">
+                  <img class="card-img-top" src="https://images.lonelyplanetitalia.it/static/places/roma-341.jpg?q=90&p=social&s=41b66c33797184a10b82356e827ef36a" >
+                  
+                </div>
+            </div>
+            
         </div>
 
     </div>
 
     <div class="container">
 
-        <div class="ticket mt-3 mb-3">
+        <div class="ticket row mt-3 mb-3 rounded">
             <div class="row p-4">
                 <div class="col-6 ">
                     <div>Nome passegero: </div>
